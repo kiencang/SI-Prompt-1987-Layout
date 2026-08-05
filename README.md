@@ -22,6 +22,6 @@ Các nhóm file được chia thành SI & Prompt, có các nhiệm vụ như sau
 
 ## Nguồn gốc
 
-Bộ SI & Prompt trên được tạo ra bằng cách tái sử dụng lại, với điều chỉnh bằng sự kết hợp của 2 bộ dưới đây:
+Bộ SI & Prompt trên được tạo ra bằng cách **tái sử dụng lại, với một số điều chỉnh** bằng sự kết hợp của 2 bộ dưới đây:
 - https://github.com/kiencang/SI-Prompt-PDF-EV-Translate (để đảm bảo giữ định dạng tốt);
 - https://github.com/kiencang/SI-Prompt-Book-EV-Translate (để đảm bảo có khả năng dịch dài);
