@@ -16,6 +16,7 @@ Bảng này sẽ làm kim chỉ nam để đảm bảo tính nhất quán tuyệ
 4. Trường hợp mối quan hệ giữa 2 nhân vật chưa rõ ràng trong đoạn trích này, hãy đặt giá trị là [Đang chờ xác định]. Tuyệt đối không tự suy diễn mối quan hệ (ví dụ: thấy 1 nam 1 nữ đi chung thì tự xưng Anh-Em) nếu văn bản không có yếu tố tình cảm/gia đình.
 5. Nếu nhân vật có sự phát triển tâm lý hoặc thay đổi mối quan hệ lớn xuyên suốt, hãy tóm tắt ngắn gọn các giai đoạn xưng hô trong phần `notes`.
 6. Chỉ trích xuất các nhân vật có tên cụ thể hoặc vai trò rõ ràng trong đoạn trích (bỏ qua nhân vật quần chúng không quan trọng).
+7. Đại từ Phi nhân xưng (Inanimate/Concept Entities): Trong tài liệu khoa học, đối tượng được xưng hô có thể là "Nhóm nghiên cứu" (We/They), hoặc các Khái niệm/Thực thể (The system/The algorithm). Hãy xác định rõ "Nhân vật" ở đây là gì và quy định cách dịch ngôi thứ 3 (Ví dụ: Hệ thống -> nó; Các hạt electron -> chúng; Tác giả -> chúng tôi/nhóm nghiên cứu).	
 </analysis_guidelines>
 
 <output_format>
