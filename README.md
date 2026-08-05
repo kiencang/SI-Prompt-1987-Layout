@@ -1,12 +1,21 @@
 # SI-Prompt-1987-Layout
 SI &amp; Prompt mẫu dùng cho việc dịch sách khoa học, định dạng PDF từ tiếng Anh sang tiếng Việt. Bộ này được dùng để phát triển dự án **1987-Layout**: https://github.com/kiencang/1987-Layout
 
-## Chức năng của từng file:
+## Chức năng của các file:
+Các nhóm file được chia thành SI & Prompt, có các nhiệm vụ như sau.
+
+### A. Phân tích đại từ
 - `pronouns_prompt.md` & `pronouns_system_instructions.md`: Dùng để lọc đại từ trong sách. Mặc dù đa số sách khoa học, chuyên ngành có thể không có đại từ đáng kể, nhưng một số dạng sách khoa học dạng chuyện kể vẫn có, nên ứng dụng này vẫn để lại như một tùy chọn (thay vì loại bỏ hoàn toàn chức năng này);
 - `normalize_pronouns_prompt.md` & `normalize_pronouns_system_instructions.md`: Dùng để chuẩn hóa bảng đại từ. Công cụ không thể nạp toàn bộ cả cuốn sách vào rồi bảo AI phân tích đại từ, mặc dù về lý thuyết nó có thể làm được, nhưng hiệu quả sẽ thấp (ít nhất là ở thời điểm hiện tại), do đầu vào quá lớn... Danh sách bảng đại từ thô được thu thập khi phân tích qua từng chunk (phân đoạn của cuốn sách) bằng cặp `pronouns_prompt.md` & `pronouns_system_instructions.md` ở trên sẽ được đưa qua SI & Prompt này để tổng hợp thành bảng hoàn chỉnh, đã loại bỏ trùng lặp;
+
+### B. Phân tích thuật ngữ
 - `glossary_prompt.md` & `glossary_system_instructions.md`. Dùng để tạo bảng thuật ngữ/từ khó. Tài liệu chuyên ngành đặc biệt cần cái này vì mức độ khó dịch của thuật ngữ. Và đối với một cuốn sách lớn nó còn cần vì tính thống nhất trong cách dịch xuyên suốt cuốn sách;
 - `filter_glossary_prompt.md` & `filter_glossary_system_instruction.md`: Dùng để lọc các thuật ngữ. Không giống như đại từ thường chỉ có 20 - 30 nhân vật chính là nhiều, số lượng thuật ngữ trong một cuốn sách lớn có thể lên đến vài trăm từ. Việc đưa toàn bộ chúng vào một chunk để dịch gây loãng mức độ tập trung vì nhiều từ sẽ không dùng đến. Mục đích của cái này là chỉ lọc ra các từ mà văn bản đang dịch cần dùng đến mà thôi;
+
+### C. Tóm tắt nội dung 
 - `summary_prompt.md` & `summary_system_instruction.md`: Việc chia thành từng phần dịch dần sẽ gặp phải vấn đề là không thấy được nội dung trước đó có gì? Phần này thực hiện việc tóm tắt nội dung của phần dịch trước đó, đặc biệt là ở phần chuyển tiếp; giúp hạn chế đáng kể việc tách rời các phân đoạn dẫn đến mất bối cảnh và dịch chính xác bị ảnh hưởng;
+
+### D. Phong cách dịch
 - `zero_math_prompt.md` & `zero_math_system_instructions.md`: Dùng để dịch các tài liệu xã hội, không có công thức và sơ đồ, biểu đồ toán phức tạp. Cái này để tăng mức độ tập trung, vì SI đầy đủ hướng dẫn cho cả phần toán sẽ tăng lên 20 - 25% dung lượng hướng dẫn, và cũng không hề có tác dụng gì trong các văn bản khoa học có đặc điểm trên;
 - `zero_svg_prompt.md` & `zero_svg_system_instructions.md`: Dùng để dịch các tài liệu có công thức toán nhưng không có các chỉ thị phức tạp liên quan đến vẽ sơ đồ, biểu đồ toán bằng SVG (chiếm khoảng 12% dung lượng tăng thêm). Đa số các tài liệu khoa học nên dùng cái này;
 - `scientific_prompt.md` & `scientific_system_instructions.md`: Dùng để dịch tài liệu khoa học phức tạp, có cả công thức toán và sơ đồ, biểu đồ toán cần tái tạo. Thường chỉ cần dùng khi dịch cho các tài liệu toán chuyên ngành;
