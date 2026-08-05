@@ -1,5 +1,7 @@
-Hãy chuẩn hóa và làm gọn Bảng đại từ nhân xưng thô dưới đây. 
+Hãy chuẩn hóa và làm gọn Bảng đại từ nhân xưng thô dưới đây.
+
 Bảng thô này được gộp từ nhiều đoạn trích xuất khác nhau phân tán trong cuốn sách, do đó nó có thể có nhiều dòng trùng lặp cùng chỉ về một nhân vật, có thể có những khác biệt nhỏ về vai trò hoặc đại từ ở những hoàn cảnh khác nhau. 
+
 Nhiệm vụ của bạn là gộp chúng lại, chọn ra phương án xưng hô chuẩn xác, đồng nhất và khái quát nhất dựa trên nội dung toàn bộ file nguồn được cung cấp.
 
 <metadata>
