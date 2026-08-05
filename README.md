@@ -10,3 +10,9 @@ SI &amp; Prompt mẫu dùng cho việc dịch sách khoa học, định dạng P
 - `zero_math_prompt.md` & `zero_math_system_instructions.md`: Dùng để dịch các tài liệu xã hội, không có công thức và sơ đồ, biểu đồ toán phức tạp. Cái này để tăng mức độ tập trung, vì SI đầy đủ hướng dẫn cho cả phần toán sẽ tăng lên 20 - 25% dung lượng hướng dẫn, và cũng không hề có tác dụng gì trong các văn bản khoa học có đặc điểm trên;
 - `zero_svg_prompt.md` & `zero_svg_system_instructions.md`: Dùng để dịch các tài liệu có công thức toán nhưng không có các chỉ thị phức tạp liên quan đến vẽ sơ đồ, biểu đồ toán bằng SVG (chiếm khoảng 12% dung lượng tăng thêm). Đa số các tài liệu khoa học nên dùng cái này;
 - `scientific_prompt.md` & `scientific_system_instructions.md`: Dùng để dịch tài liệu khoa học phức tạp, có cả công thức toán và sơ đồ, biểu đồ toán cần tái tạo. Thường chỉ cần dùng khi dịch cho các tài liệu toán chuyên ngành;
+
+## Nguồn gốc
+
+Bộ SI & Prompt trên được tái sử dụng lại, với điều chỉnh nhỏ bằng sự kết hợp của 2 bộ dưới đây:
+- https://github.com/kiencang/SI-Prompt-PDF-EV-Translate (để đảm bảo giữ định dạng tốt);
+- https://github.com/kiencang/SI-Prompt-Book-EV-Translate (để đảm bảo có khả năng dịch dài);
