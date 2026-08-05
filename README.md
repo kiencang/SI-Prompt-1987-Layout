@@ -8,7 +8,7 @@ Các nhóm file được chia thành SI & Prompt, có các nhiệm vụ như sau
 - `pronouns_prompt.md` & `pronouns_system_instructions.md`: Dùng để lọc đại từ trong sách. Mặc dù đa số sách khoa học, chuyên ngành có thể không có đại từ đáng kể, nhưng một số dạng sách khoa học dạng chuyện kể vẫn có, nên ứng dụng này vẫn để lại như một tùy chọn (thay vì loại bỏ hoàn toàn chức năng này);
 - `normalize_pronouns_prompt.md` & `normalize_pronouns_system_instructions.md`: Dùng để chuẩn hóa bảng đại từ. Công cụ không thể nạp toàn bộ cả cuốn sách vào rồi bảo AI phân tích đại từ, mặc dù về lý thuyết nó có thể làm được, nhưng hiệu quả sẽ thấp (ít nhất là ở thời điểm hiện tại), do đầu vào quá lớn... Danh sách bảng đại từ thô được thu thập khi phân tích qua từng chunk (phân đoạn của cuốn sách) bằng cặp `pronouns_prompt.md` & `pronouns_system_instructions.md` ở trên sẽ được đưa qua SI & Prompt này để tổng hợp thành bảng hoàn chỉnh, đã loại bỏ trùng lặp;
 
-### B. Phân tích thuật ngữ
+### B. Tạo bảng thuật ngữ
 - `glossary_prompt.md` & `glossary_system_instructions.md`. Dùng để tạo bảng thuật ngữ/từ khó. Tài liệu chuyên ngành đặc biệt cần cái này vì mức độ khó dịch của thuật ngữ. Và đối với một cuốn sách lớn nó còn cần vì tính thống nhất trong cách dịch xuyên suốt cuốn sách;
 - `filter_glossary_prompt.md` & `filter_glossary_system_instruction.md`: Dùng để lọc các thuật ngữ. Không giống như đại từ thường chỉ có 20 - 30 nhân vật chính là nhiều, số lượng thuật ngữ trong một cuốn sách lớn có thể lên đến vài trăm từ. Việc đưa toàn bộ chúng vào một chunk để dịch gây loãng mức độ tập trung vì nhiều từ sẽ không dùng đến. Mục đích của cái này là chỉ lọc ra các từ mà văn bản đang dịch cần dùng đến mà thôi;
 
